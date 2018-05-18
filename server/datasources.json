@@ -1,6 +1,12 @@
 {
-  "db": {
+  "mongoforumdb": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "forum",
+    "password": "",
     "name": "db",
-    "connector": "memory"
+    "user": "",
+    "connector": "mongodb"
   }
 }

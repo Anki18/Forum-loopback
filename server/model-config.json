@@ -14,25 +14,30 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongoforumdb",
+    "public": true
   },
   "AccessToken": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "mongoforumdb",
+    "public": true
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongoforumdb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongoforumdb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongoforumdb",
     "public": false
+  },
+  "Tags": {
+    "dataSource": "mongoforumdb",
+    "public": true
   }
 }
