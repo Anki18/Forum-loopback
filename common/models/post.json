@@ -1,0 +1,65 @@
+{
+  "name": "post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_number": {
+      "type": "number",
+      "required": true
+    },
+    "thread_id": {
+      "type": "string",
+      "required": true
+    },
+    "post_content": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_shortname": {
+      "type": "string",
+      "required": true
+    },
+    "user_email": {
+      "type": "string",
+      "required": true
+    },
+    "create_date": {
+      "type": "date",
+      "required": true
+    },
+    "update_date": {
+      "type": "date",
+      "required": true
+    },
+    "create_date_iso": {
+      "type": "date",
+      "required": true
+    },
+    "update_date_iso": {
+      "type": "date",
+      "required": true
+    },
+    "like_count": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

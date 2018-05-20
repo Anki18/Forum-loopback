@@ -5,7 +5,7 @@
     "url": "",
     "database": "forum",
     "password": "",
-    "name": "db",
+    "name": "mongoforumdb",
     "user": "",
     "connector": "mongodb"
   }

@@ -39,5 +39,13 @@
   "Tags": {
     "dataSource": "mongoforumdb",
     "public": true
+  },
+  "thread": {
+    "dataSource": "mongoforumdb",
+    "public": true
+  },
+  "post": {
+    "dataSource": "mongoforumdb",
+    "public": true
   }
 }

@@ -1,0 +1,81 @@
+{
+  "name": "thread",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_number": {
+      "type": "number",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "topic": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_shortname": {
+      "type": "string",
+      "required": true
+    },
+    "user_email": {
+      "type": "string",
+      "required": true
+    },
+    "create_date": {
+      "type": "date",
+      "required": true
+    },
+    "update_date": {
+      "type": "date",
+      "required": true
+    },
+    "create_date_iso": {
+      "type": "date",
+      "required": true
+    },
+    "update_date_iso": {
+      "type": "date",
+      "required": true
+    },
+    "post_count": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "like_count": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "tags": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
