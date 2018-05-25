@@ -4,11 +4,11 @@ import LoginComponent from './LoginComponent';
 import About from './About';
 import ThreadComponent from './ThreadComponent';
 
-const MainComponent = () =>{
+const MainComponent = props =>{
     return(
         <div>
             <Switch>
-                <Route exact path ="/" component ={LoginComponent}/>
+                <Route exact path ="/" component ={()=><LoginComponent {...props}/>} />
                 <Route exact path ="/about" component ={About}/>
                 <Route exact path ="/thread" component ={ThreadComponent}/>
             </Switch>

@@ -4,8 +4,9 @@ class ThreadComponent extends Component {
   render() {
     return (
       <div className="container">
-      <h1>Thread</h1>
-      </div>)
+        <h1>Threads</h1>
+      </div>
+      )
       }
 }
 
