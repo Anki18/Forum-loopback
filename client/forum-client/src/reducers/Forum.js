@@ -5,7 +5,7 @@ export default function(
     action
   ) {
     switch (action.type) {
-      case "SetAccesToken":
+      case "SetAccessToken":
         return Object.assign({}, state, { accessToken : action.payload.id });
       default:
         break;

@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import { Redirect } from 'react-router';
 
 class LoginComponent extends Component{
     constructor(props){
@@ -8,8 +9,8 @@ class LoginComponent extends Component{
           password:''
         }
         this.onSubmit = this.onSubmit.bind(this);
+        
     }
-    
     onSubmit(e){
         e.preventDefault();
         var cred ={
@@ -17,7 +18,6 @@ class LoginComponent extends Component{
             "password" : e.target[1].value
         }
         this.props.login(cred);
-        //this.props.history.push('/thread');
       }
     render(){
     return (
